@@ -3,6 +3,7 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import Link from "next/link";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import grainImage from "@/assets/images/grain.jpg";
@@ -11,7 +12,7 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
+    name: "What Really Happens When You Enter a URL in the Browser?",
     position: "Marketing Manager @ TechStartups",
     text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
     avatar: memojiAvatar1,
@@ -52,34 +53,42 @@ export const TestimonialsSection = () => {
           description="Dont just take my word for it. See what my client have to say about me"
         />
         <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4">
-          <div className="flex gap-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused] pr-8">
+          <div className="flex gap-8 flex-none animate-move-left [animation-duration:10s] hover:[animation-play-state:paused] pr-8">
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {" "}
                 {testimonials.map(testimonial => (
-                  <Card
+                  <Link
+                    href="https://medium.com/@ayogesh1214/what-really-happens-when-you-enter-a-url-in-the-browser-cb33c4da98c0"
+                    target="_blank"
                     key={testimonial.name}
-                    className="max-w-xs md:p-8 md:max-w-md p-6 hover:-rotate-3 transition duration-300 "
                   >
-                    <div className="flex gap-4 items-center">
-                      <div className="size-14 bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">
-                        <Image
-                          src={testimonial.avatar}
-                          alt={testimonial.name}
-                          className="max-h-full"
-                        />
-                      </div>
-                      <div>
-                        <div className="font-semibold">{testimonial.name}</div>
-                        <div className="text-sm text-white/40">
-                          {testimonial.position}
+                    <Card
+                      key={testimonial.name}
+                      className="max-w-xs md:p-8 md:max-w-md p-6 hover:-rotate-3 transition duration-300 "
+                    >
+                      <div className="flex gap-4 items-center">
+                        <div className="size-14 bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">
+                          <Image
+                            src={testimonial.avatar}
+                            alt={testimonial.name}
+                            className="max-h-full"
+                          />
+                        </div>
+                        <div>
+                          <div className="font-semibold">
+                            {testimonial.name}
+                          </div>
+                          <div className="text-sm text-white/40">
+                            {testimonial.position}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <p className="mt-4 text-sm md:text-base md:mt-6">
-                      {testimonial.text}
-                    </p>
-                  </Card>
+                      <p className="mt-4 text-sm md:text-base md:mt-6">
+                        {testimonial.text}
+                      </p>
+                    </Card>
+                  </Link>
                 ))}
               </Fragment>
             ))}
