@@ -98,7 +98,7 @@ export const HeroSection = () => {
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
             <div className="text-sm font-medium ">
-              Avaiable for new opportunities
+              Open to new opportunities
             </div>
           </div>
         </div>
