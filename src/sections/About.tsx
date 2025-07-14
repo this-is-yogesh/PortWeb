@@ -2,6 +2,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import StarIcon from "@/assets/icons/star.svg";
 import bookImage from "@/assets/images/book-cover.png";
+import bookImage2 from "@/assets/images/book-cover2.png";
+import bookImage3 from "@/assets/images/book-cover3.png";
 import Image from "next/image";
 import JSIcon from "@/assets/icons/square-js.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
@@ -25,10 +27,10 @@ const toolboxitems = [
 ];
 
 const hobbies = [
-  { title: "Painting", emoji: "🎨", left: "5%", top: "5%" },
-  { title: "Photography", emoji: "📷", left: "50%", top: "5%" },
+  { title: "Hiking", emoji: "🎨", left: "5%", top: "5%" },
+  { title: "Cycling", emoji: "🚴🏻", left: "50%", top: "5%" },
   ,
-  { title: "Hiking", emoji: "🥾", left: "35%", top: "40%" },
+  // { title: "Hiking", emoji: "🥾", left: "35%", top: "40%" },
   ,
   { title: "Gaming", emoji: "🎮", left: "10%", top: "35%" },
   ,
@@ -49,15 +51,41 @@ export const AboutSection = () => {
         />
         <div className=" mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-            <Card className="h-[320px] md:col-span-2">
+            <Card className="h-auto md:col-span-2">
               <CardHeader
                 title="My Reads"
                 description="Explore the books shaping my perspective"
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book Cover" />
+
+              <div className="grid grid-cols-3 gap-4 px-4 pb-4">
+                {/* Top row - 3 books */}
+                <div className="col-span-1">
+                  <Image
+                    src={bookImage}
+                    alt="Book 1"
+                    className="w-full h-auto rounded shadow"
+                  />
+                </div>
+                <div className="col-span-1">
+                  <Image
+                    src={bookImage2}
+                    alt="Book 2"
+                    className="w-full h-auto rounded shadow"
+                  />
+                </div>
+                <div className="col-span-1">
+                  <Image
+                    src={bookImage3}
+                    alt="Book 3"
+                    className="w-full h-auto rounded shadow"
+                  />
+                </div>
+
+                {/* Bottom row - centered 2 books */}
+
               </div>
             </Card>
+
             <Card className="h-[320px] md:col-span-3">
               <CardHeader
                 title="My Toolbox"

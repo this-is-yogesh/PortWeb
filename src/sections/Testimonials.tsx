@@ -1,8 +1,8 @@
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import memojiAvatar1 from "@/assets/images/memoji-avatar-1.jpg";
+import memojiAvatar2 from "@/assets/images/memoji-avatar-2.jpg";
+import memojiAvatar3 from "@/assets/images/memoji-avatar-3.jpg";
+import memojiAvatar4 from "@/assets/images/memoji-avatar-4.jpg";
+import memojiAvatar5 from "@/assets/images/memoji-avatar-5.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -13,32 +13,32 @@ import { Fragment } from "react";
 const testimonials = [
   {
     name: "What Really Happens When You Enter a URL in the Browser?",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    position: "Behind the screens of web",
+    text: "We all do it countless times a day — type a URL into our browser’s address bar and hit enter. But have you ever wondered what actually happens behind the scenes? The journey from pressing “Enter” to seeing a fully loaded webpage is a fascinating dance of technology, involving multiple steps and processes.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Load Balancers: The Unsung Traffic Cops of the Internet",
+    position: "What Exactly Is a Load Balancer",
+    text: "At its core, a load balancer is a middleman — a system that distributes incoming network traffic across multiple servers. Instead of sending all your user requests to one server (which will eventually beg for mercy), a load balancer makes sure the load is shared, fair, and efficient. It sits in front of your servers.",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Demystifying Web Rendering: 5 Frontend Strategies Explained with Real-Life Analogies",
+    position: "",
+    text: "Have you ever clicked on a website and wondered how the content magically appears on your screen? Behind the scenes, different rendering strategies are at play, each with its own pros, cons, and use cases.In this post, we’ll break down five common web rendering strategies using simple analogies.",
     avatar: memojiAvatar3,
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    name: "How to Implement Your Own DOM in JavaScript",
+    position: "",
+    text: "The Document Object Model (DOM) is an essential concept in web development. It represents the structure of a web page, allowing scripts to manipulate the HTML and XML documents.If you’ve ever worked with JavaScript in the browser, you’ve interacted with the DOM — whether adding an event listener to a button or dynamically updating content.",
     avatar: memojiAvatar4,
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Supercharge Your JavaScript Performance with Memoization: A Deep Dive",
+    position: "",
+    text: "In JavaScript, optimizing performance can often be a game-changer, especially when dealing with expensive computations. One powerful technique to achieve this is memoization. Memoization allows you to store the results of expensive function calls and reuse them when the same inputs occur again.",
     avatar: memojiAvatar5,
   },
 ];
@@ -48,12 +48,12 @@ export const TestimonialsSection = () => {
     <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Happy Clients"
-          title="What clien ts say about me"
-          description="Dont just take my word for it. See what my client have to say about me"
+          eyebrow="Tech Blogs"
+          title="A Few Things I’ve Written"
+          description="Explore my thoughts, insights, and learnings across code, tools, and development."
         />
         <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4">
-          <div className="flex gap-8 flex-none animate-move-left [animation-duration:10s] hover:[animation-play-state:paused] pr-8">
+          <div className="flex gap-8 flex-none animate-move-left [animation-duration:20s] hover:[animation-play-state:paused] pr-8">
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {" "}

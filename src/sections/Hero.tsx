@@ -98,7 +98,7 @@ export const HeroSection = () => {
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
             <div className="text-sm font-medium ">
-              Avaiable for new projects
+              Avaiable for new opportunities
             </div>
           </div>
         </div>
@@ -108,12 +108,15 @@ export const HeroSection = () => {
             Building exceptional user experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Hi, I`m [Your Name] – a passionate [Your Profession, e.g., Frontend
-            Developer] committed to crafting seamless user experiences. With
-            expertise in [mention key skills, e.g., React, JavaScript, or design
-            systems], I bring ideas to life through clean and efficient code. I
-            thrive on solving complex challenges and creating impactful digital
-            solutions. Let`s build something remarkable together!
+            Hi, I'm Yogesh Singh — a Frontend developer with 2.5+ years of
+            experience, focused on building intuitive user experiences and
+            products that solve real problems — or are simply fun to create. I
+            enjoy working across the stack with tools like React, React Native,
+            Next.js, and TypeScript, and I care deeply about performance, clean
+            code, and delivering consistent experiences. Whether it's launching
+            features, refining UI, or collaborating across teams, I bring
+            curiosity, attention to detail, and a strong sense of ownership to
+            every project.
           </p>
         </div>
         <div className="flex flex-col items-center mt-8 gap-4 md:flex-row justify-center">
