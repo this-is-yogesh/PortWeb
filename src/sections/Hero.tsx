@@ -108,12 +108,12 @@ export const HeroSection = () => {
             Building exceptional user experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Hi, I'm Yogesh Singh — a Frontend developer with 2.5+ years of
+            Hi, I am Yogesh Singh — a Frontend developer with 2.5+ years of
             experience, focused on building intuitive user experiences and
             products that solve real problems — or are simply fun to create. I
             enjoy working across the stack with tools like React, React Native,
             Next.js, and TypeScript, and I care deeply about performance, clean
-            code, and delivering consistent experiences. Whether it's launching
+            code, and delivering consistent experiences. Whether it is launching
             features, refining UI, or collaborating across teams, I bring
             curiosity, attention to detail, and a strong sense of ownership to
             every project.
