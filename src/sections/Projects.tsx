@@ -1,6 +1,7 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import codeeitor from "@/assets/images/codeeitor.png";
+import dentwise from "@/assets/images/dentwise.png";
 import remoteInterview from "@/assets/images/remoteInterview.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -12,28 +13,45 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Remote Interview",
+    company: "Redis Based Chat Application",
+    year: "2024",
+    title: "Redis Chat App",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title:
+          "📡 Real-time messaging using Redis Pub/Sub for instant broadcasts",
+      },
+      { title: "⚡ Blazing-fast performance with Redis in-memory data store" },
+      { title: "🟢 Live user presence tracking using Redis Sets/Hashes" },
     ],
     link: "https://redis-chat-app-seven.vercel.app/auth",
     image: darkSaasLandingPage,
   },
   {
     company: "Code Editor",
-    year: "2021",
+    year: "2024",
     title: "Code Editor",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "💻 Online IDE with multi-language support (10 languages)" },
+      { title: "👤 Personal profile with execution history tracking" },
+      { title: "📊 Comprehensive statistics dashboard" },
     ],
-    link: "https://code-editor-two-pi.vercel.app/",
+    link: "https://online-code-editor-rho-lake.vercel.app/",
     image: codeeitor,
+  },
+  {
+    company: "Appointment Booking Application",
+    year: "2025",
+    title: "Book Dental Appointment",
+    results: [
+      {
+        title: "📂 PostgreSQL for Data Persistence",
+      },
+      { title: "📅 Appointment Booking System" },
+      { title: "💸 Smart Subscription Upgrades" },
+    ],
+    link: "https://dentwisepro.vercel.app/",
+    image: dentwise,
   },
   // {
   //   company: "Quantum Dynamics",
@@ -87,7 +105,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
