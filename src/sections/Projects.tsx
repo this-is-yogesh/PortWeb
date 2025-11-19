@@ -13,21 +13,6 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Redis Based Chat Application",
-    year: "2024",
-    title: "Redis Chat App",
-    results: [
-      {
-        title:
-          "📡 Real-time messaging using Redis Pub/Sub for instant broadcasts",
-      },
-      { title: "⚡ Blazing-fast performance with Redis in-memory data store" },
-      { title: "🟢 Live user presence tracking using Redis Sets/Hashes" },
-    ],
-    link: "https://redis-chat-app-seven.vercel.app/auth",
-    image: darkSaasLandingPage,
-  },
-  {
     company: "Code Editor",
     year: "2024",
     title: "Code Editor",
@@ -53,18 +38,6 @@ const portfolioProjects = [
     link: "https://dentwisepro.vercel.app/",
     image: dentwise,
   },
-  // {
-  //   company: "Quantum Dynamics",
-  //   year: "2023",
-  //   title: "AI Startup Landing Page",
-  //   results: [
-  //     { title: "Enhanced user experience by 40%" },
-  //     { title: "Improved site speed by 50%" },
-  //     { title: "Increased mobile traffic by 35%" },
-  //   ],
-  //   link: "https://youtu.be/Z7I5uSRHMHg",
-  //   image: aiStartupLandingPage,
-  // },
 ];
 
 export const ProjectsSection = () => {
